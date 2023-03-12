@@ -1,0 +1,98 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-view {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgb(215, 172, 172);
+}
+
+.main-view-body {
+    width: 60%;
+}
+
+.main-view__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main-view__wrapper__filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-view__wrapper__filter input {
+    height: 40px;
+    outline: none;
+    border-bottom: 1px solid gray;
+    margin-top: 5px;
+    font-size: 24px;
+}
+
+.tabs {
+    background-color: white;
+    width: 100%;
+    height: calc(100% - 70px);
+}
+
+.tabs__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: calc(100% - 0px);
+    overflow-y: auto;
+}
+
+.main-view__wrapper__tabs__list {
+    width: 40%;
+}
+
+.tabs__list__item {
+    list-style: none;
+    cursor: pointer;
+    min-height: 80px;
+    width: 100%;
+    border-bottom: 0.7px solid rgb(208, 204, 204);
+    padding-top: 10px;
+    display: flex;
+    position: relative;
+}
+
+.tabs__list__item__image {
+    margin: 0 15px;
+}
+
+.tabs__list__item__detail {
+    text-align: left;
+}
+
+.tabs__list__item__date {
+    position: absolute;
+    right: 15px;
+}
+
+.tabs__list__item__detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs__list__item__active {
+    background-color: rgb(215, 209, 209);
+}
+
+
+
